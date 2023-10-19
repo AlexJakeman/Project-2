@@ -1,146 +1,353 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Geo&family=Quicksand&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Oswald; /* change FONT */ 
-  }
+    font-family: 'Geo', sans-serif;
+}
 
-
+body {
+    background-color: #EBEDDF;
+    color: #000000;
+    margin: auto;
+}
 
 /* ----- Navbar ----- */
+
 .nav-bar{
     height: 70px;
     background: #333A2F;
     z-index: 1;
   }
   
-  .nav-container{
-    max-width: 1000px;
-    max-height: 70px;
-  }
-  
-  .active {
-    text-decoration: underline;
-    text-decoration-color: #fafafa;
-  }
-  
-  .nav-list {
-    font-size: 150%;
-  }
-  
-  nav{
-    float: left;
-    padding: 70px 0 0 0;
-  }
-  
-  nav ul{
-    list-style: none;
-  }
-  
-  nav ul li{
-    float: left;
-    position: relative;
-  }
-  
-  nav ul li a{
-    display: block;
-    padding: 0 20px;
+.nav-container{
+max-width: 1000px;
+max-height: 70px;
+}
+
+.active {
+text-decoration: underline;
+text-decoration-color: #f3cfcd;
+color: #f3cfcd;
+}
+
+.nav-list {
+font-size: 150%;
+}
+
+nav{
+float: left;
+padding: 70px 0 0 0;
+}
+
+nav ul{
+list-style: none;
+}
+
+nav ul li{
+float: left;
+position: relative;
+}
+
+nav ul li a{
+display: block;
+padding: 0 20px;
+line-height: 70px;
+background: #333A2F;
+text-decoration: none;
+color: #EBEDDF;
+}
+
+nav ul li a:hover{
+background: #333A2F;
+color: #fff;
+}
+
+nav ul li a:not(:only-child):after{
+content: '▼';
+padding-left: 5px;
+}
+
+nav ul li ul li {
+min-width: 190px;
+}
+
+nav ul li ul li a{
+padding: 15px;
+line-height: 20px;
+}
+
+.nav-dropdown{
+position: absolute;
+display: none;
+z-index: 1;
+}
+
+.nav-mobile{
+display: none;
+position: static;
+top: 0;
+right: 0;
+}
+
+#nav-toggle{
+position: absolute;
+left: 18px;
+top: 22px;
+cursor: pointer;
+padding: 10px 35px 15px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span::before,
+#nav-toggle span::after{
+position: absolute;
+display: block;
+content: '';
+background: #EBEDDF;
+height: 5px;
+width: 35px;
+transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span::before{
+top: -10px;
+}
+
+#nav-toggle span::after{
+bottom: -10px;
+}
+
+#nav-toggle.active span{
+background-color: transparent;
+}
+
+#nav-toggle.active span::before, #nav-toggle.active span::after{
+top: 0;
+}
+
+#nav-toggle.active span::before{
+transform: rotate(45deg);
+}
+
+#nav-toggle.active span::after{
+transform: rotate(-45deg);
+}
+
+#site-logo {
+height: 65px;
+float: right;
+}
+
+/* Generic Page Components */
+
+.page-title {
+    text-align: center; 
+    font-size: 36px;
     line-height: 70px;
-    background: #333A2F;
-    text-decoration: none;
-    color: #EBEDDF;
+}
+
+.paragraph-header {
+    text-align: center; 
+    font-size: 28px;
+    line-height: 70px;
+}
+
+.paragraph-content {
+    text-align: center; 
+    font-size: 18px;
+}
+
+.team-page-quotes {
+    text-align: center; 
+    font-size: 16px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Cloud Text Wrap
+
+.cloud{ 
+    margin-top:70px;
+    width:350px;
+    height:120px;
+    background:#f3cfcd;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    z-index: -1;
+ }
+ .cloud::after, .cloud::before{
+     content:"";
+     position:fixed;
+     display: grid;
+     background:inherit;
+     z-index: -1;
+     border-radius:inherit;
+ }
+ .cloud::after{
+     width:100px;
+     z-index: -1;
+     height:100px;
+     top:-250px;
+     left:50px;
+ }
+ .cloud::before{
+     width:180px;
+     height:180px;
+     left:130px;
+     z-index: 1;
+ }
+
+ .cloud-round {
+
+    width:350px;
+    height:120px;
+    background:#ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+ }
+
+ .cloud-round p {
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.cloud-text {
+    z-index: 9;
+} */
+.container {
+    width: 250px;
+    height: 250px;
   }
   
-  nav ul li a:hover{
-    background: #333A2F;
-    color: #fff;
+  .terminal_toolbar {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #212121;
+    justify-content: space-between;
   }
   
-  nav ul li a:not(:only-child):after{
-    content: '▼';
-    padding-left: 5px;
+  .butt {
+    display: flex;
+    align-items: center;
   }
   
-  nav ul li ul li {
-    min-width: 190px;
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(#7d7871 0%, #595953 100%);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
   }
   
-  nav ul li ul li a{
-    padding: 15px;
-    line-height: 20px;
+  .btn-color {
+    background: #ee411a;
   }
   
-  .nav-dropdown{
-    position: absolute;
-    display: none;
-    z-index: 1;
-  }
-  
-  .nav-mobile{
-    display: none;
-    position: static;
-    top: 0;
-    right: 0;
-  }
-  
-  #nav-toggle{
-    position: absolute;
-    left: 18px;
-    top: 22px;
+  .btn:hover {
     cursor: pointer;
-    padding: 10px 35px 15px 0px;
   }
   
-  #nav-toggle span,
-  #nav-toggle span::before,
-  #nav-toggle span::after{
-    position: absolute;
+  .btn:focus {
+    outline: none;
+  }
+  
+  .butt--exit {
+    background: linear-gradient(#f37458 0%, #de4c12 100%);
+  }
+  
+  .add_tab {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    cursor: pointer;
+  }
+  
+  .user {
+    color: #d5d0ce;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  
+  .terminal_body {
+    background: rgba(0, 0, 0, 0.6);
+    height: calc(100% - 30px);
+    padding-top: 2px;
+    margin-top: -1px;
+    font-size: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .terminal_promt {
+    display: flex;
+  }
+  
+  .terminal_promt span {
+    margin-left: 4px;
+  }
+  
+  .terminal_user {
+    color: #1eff8e;
+  }
+  
+  .terminal_location {
+    color: #4878c0;
+  }
+  
+  .terminal_bling {
+    color: #dddddd;
+  }
+  
+  .terminal_cursor {
     display: block;
-    content: '';
-    background: #333A2F;
-    height: 5px;
-    width: 35px;
-    transition: all 300ms ease-in-out;
+    height: 14px;
+    width: 5px;
+    margin-left: 10px;
+    animation: curbl 1200ms linear infinite;
   }
   
-  #nav-toggle span::before{
-    top: -10px;
-  }
+  @keyframes curbl {
   
-  #nav-toggle span::after{
-    bottom: -10px;
-  }
+    0% {
+      background: #ffffff;
+    }
   
-  #nav-toggle.active span{
-    background-color: transparent;
-  }
+    49% {
+      background: #ffffff;
+    }
   
-  #nav-toggle.active span::before, #nav-toggle.active span::after{
-    top: 0;
-  }
+    60% {
+      background: transparent;
+    }
   
-  #nav-toggle.active span::before{
-    transform: rotate(45deg);
-  }
+    99% {
+      background: transparent;
+    }
   
-  #nav-toggle.active span::after{
-    transform: rotate(-45deg);
+    100% {
+      background: #ffffff;
+    }
   }
-
-  #site-logo {
-    height: 65px;
-    float: right;
-  }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -177,7 +384,7 @@ footer{
     font-size: 150%;
     margin: 10%;
     padding: 3px;
-    color: #EBEDDF;
+    color: #f3cfcd;;
   } 
 
   /* Media Queries */
@@ -193,7 +400,7 @@ footer{
 
     nav{
     width: 100%;
-    padding: 70px 0 0 0;
+    padding: 0 0 0 0;
     }
 
     nav ul{
@@ -217,6 +424,8 @@ footer{
     .nav-dropdown{
         position: static;
     }
+
+    
 }
 
 
@@ -233,7 +442,18 @@ footer{
         display: block !important;
     }
 
-    /* */
+    /* CLoud Layout Desktop */
 
+    .page-left {
+        float: left;
+        width: 50%;
+        height: 150px;
+    }
+
+    .page-right {
+        float: right;
+        width: 50%;
+        height: 150px;
+    }
 
 }
