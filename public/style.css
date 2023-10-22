@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Handlee&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Geo&family=Quicksand&display=swap');
 
 * {
@@ -167,52 +165,23 @@ right: 5px;
 .team-page-quotes {
     text-align: center; 
     font-size: 16px;
-    font-family: 'Pacifico', cursive;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    font-family: 'Handlee', cursive;
+}
+
+.team-page-quotes img {
+  border-radius: 100px;
+  
 }
 
 
 
 
 
-/* Cloud Test */
 
-.cloud-round { 
-  width:350px;
-  height:120px;
-  background:#ECEFF1;
-  box-shadow: 10px 10px rgba(0,0,0,0.2);
-  border-radius:100px;
-}
 
-/* Full Cloud Test */
-
-.cloud{ 
-  margin-top:70px;
-  width:350px;
-  height:120px;
-  background:#ECEFF1;
-  box-shadow: 10px 10px rgba(0,0,0,0.2);
-  border-radius:100px;
-}
-.cloud::after, .cloud::before{
-   content:"";
-   position:relative;
-   display:inline-block;
-   background:inherit;
-   border-radius:inherit;
-}
-.cloud::after{
-   width:100px;
-   height:100px;
-   top:-275px;
-   left:50px;
-}
-.cloud::before{
-   width:180px;
-   height:180px;
-   top: -70px;
-   left:130px;
-}
 
   /* ----- Footer -----  */
 
@@ -258,8 +227,8 @@ footer{
     }
 
     nav{
-    width: 100%;
-    padding: 0 0 0 0;
+        width: 100%;
+        padding: 0 0 0 0;
     }
 
     nav ul{
@@ -288,7 +257,7 @@ footer{
 }
 
 
-@media screen and (min-width: 852px){
+@media screen and (min-width: 852px) and (max-width: 1399px){
     
     /* Navbar */
 
@@ -305,9 +274,40 @@ footer{
 
     #team-member-1, #team-member-2, #team-member-3, #team-member-4 {
       width: 50%; 
-      height: 400px;
-      float:left;
-      display: flex;
+      height: 500px;
+      float:left  ;
   } 
 
+}
+
+@media screen and (min-width: 1400px){
+
+  /* Navbar */
+
+  nav {
+    float: left;
+    padding: 0 0 0 0px;
+  }
+
+  .nav-list {
+    display: block !important;
+  }
+
+  
+  /* About Us page layout */
+
+  #team-member-1, #team-member-2, #team-member-3, #team-member-4 {
+    width: 50%; 
+    height: 500px;
+    float:left;
+  } 
+
+  .team-page-quotes {
+    text-align: center; 
+    font-size: 16px;
+    padding-left: 60px;
+    padding-top: 25px;
+    padding-right: 60px;
+    font-family: 'Handlee', cursive;
+  }
 }
