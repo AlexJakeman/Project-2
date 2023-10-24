@@ -311,7 +311,7 @@ footer a {
     flex-basis:initial;
   }
 
-  #team-member-5 {
+  #team-member-5, #team-member-6 {
     width: 100%; 
     height: auto;
     float:left;
@@ -358,13 +358,13 @@ footer a {
     border-color: #333A2F;
   }
    
-  #team-member-5 {
+  #team-member-5, #team-member-6 {
     width: 100%; 
     height: auto;
     float:left;
   }
   
-  #team-member-5 h1, #team-member-5 h3 {
+  #team-member-5 h1, #team-member-5 h3, #team-member-6 h3, #team-member-6 h1 {
     padding-left: 25%;
     padding-right: 25%;
   }
@@ -390,13 +390,13 @@ footer a {
     float:left;
   }
   
-  #team-member-5 {
+  #team-member-5, #team-member-6 {
     width: 100%; 
     height: auto;
     float:left;
   }
   
-  #team-member-5 h1, #team-member-5 h3 {
+  #team-member-5 h1, #team-member-5 h3, #team-member-6 h1, #team-member-6 h3 {
     padding-left: 25%;
     padding-right: 25%;
   }
