@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/fun-land-tab-icon.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Fun-Land</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -29,7 +30,7 @@
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="#"><u class="active">Our Games</u></a>
                     <ul class="nav-dropdown">
-                        <li><a href="memory-card-game.html"><u class="active">Spot The Difference</u></a></li>
+                        <li><a href="memory-card-game.html"><u class="active">Match The Cards</u></a></li>
                         <li><a href="simon-says.html">Simon Says</a></li>
                     </ul>
                     </li>
@@ -39,27 +40,20 @@
         </div>
     </header>
 
-    <!-- <section>
-        <div>
-            <h1 class="page-title">
-                Remember The Card
-            </h1>
-            <h2>
-                TEST H2
-            </h2>
-            <h3 class="paragraph-content">
-                <div class="pixelart">
-
-                </div>>
-            </h3>
-        </div>
-        TEST
-    </section> -->
+    <section>
+        
+    </section>
 
     <section>
         <h1 id="game-h1">
             Memory Cards
         </h1>
+        <h1 class="paragraph-content-memory-page">
+            Welcome to our fun memory card game.
+        </h1>
+        <h3 class="paragraph-content-memory-page">
+            For further instructions on how to play, scroll down to the "How To Play" section.
+        </h3>
         <div class="grid-container">
 
         </div>
@@ -72,31 +66,31 @@
         <script src="scripts/memory-card-game.js"></script>
     </section>
 
-    <div class="flex-mobile">
-        <div class="flex-container">
-            <div class="flex-item-center" style="order: 1">
-                <div style="height: 100px;"> 
-                    <h3  class="team-page-quotes">
-                        <img src="images/our-mission.png" alt="Fun-Land's Mission Statement" id="mission-statement-img">
+    <section>
+        <div class="rule-list">
+            <h1 class="page-title">
+                How To Play
+            </h1>
+            <h2 class="paragraph-content-memory-page">
+                This fun game will test your memory as well as help you to improve the way you remember images and their positions in the grid!
+            </h2>
+            <h3 class="paragraph-content">
+                <div>
+                    <ol>
+                        <li>1. The objective is to collect the most pairs of cards.</li>
+                        <li>2. On each turn, the player can turn over any two cards.</li>
+                        <li>3. The cards will stay turned over if they're a match.</li>
+                        <li>4. When a player turns over two cards that do not match, those cards are turned face down again.</li>
+                        <li>5. The score will increase by 1 every turn.</li>
+                        <li>6. Lowest score wins.</li>
+                    </ol>
+                    <h3 class="paragraph-content">
+                        Good luck!
                     </h3>
-                    <div id="team-member-5">
-                        <h1  class="paragraph-header">
-                            Our Mission...
-                        </h1>
-                        <h3 class="team-page-quotes">
-                            Fun-Land's mission, spearheaded by its founder Alex Jakeman, to provide accessible and simple games like "Simon Says" can have a profound and positive impact on young people who may not have access to complex games.         
-                        </h3>
-                        <h3 class="team-page-quotes">
-                            It not only offers entertainment but also contributes to their education, social development, and overall well-being.          
-                        </h3>
-                        <h3 class="team-page-quotes">
-                            Alex Jakeman's vision of inclusivity and simplicity in gaming can truly make a difference in the lives of many young individuals.        
-                        </h3>
-                    </div>    
                 </div>
-            </div>
+            </h3>
         </div>
-    </div>
+    </section>
 
     <script src="scripts/memory-card-game.js"></script>
 
