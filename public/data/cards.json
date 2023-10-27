@@ -22,14 +22,6 @@
     {
         "image": "/public/images/memory-cards/light-monitor-card.png",
         "name": "Light Monitor"
-    },
-    {
-        "image": "/public/images/memory-cards/dark-pac-card.png",
-        "name": "Dark Pac"
-    },
-    {
-        "image": "/public/images/memory-cards/light-pac-card.png",
-        "name": "Light Pac"
     }
 ]
 
