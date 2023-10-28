@@ -3,7 +3,11 @@ let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
 let score = 0;
+let pairs = 0;
+let feedback = "Select two cards to find out."
 
+document.querySelector(".pairs").textContent = pairs;
+document.querySelector(".feedback").textContent = feedback;
 document.querySelector(".score").textContent = score;
 
 fetch("./data/cards.json")
@@ -71,8 +75,10 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-
+  pairs++,
+  document.querySelector(".pairs").textContent = pairs; 
   resetBoard();
+  document.querySelector(".feedback").textContent = "Yes";
 }
 
 function unflipCards() {
@@ -80,20 +86,34 @@ function unflipCards() {
     firstCard.classList.remove("flipped");
     secondCard.classList.remove("flipped");
     resetBoard();
-  }, 1000);
+  }, 1000);  
 }
 
 function resetBoard() {
   firstCard = null;
   secondCard = null;
   lockBoard = false;
+  document.querySelector(".feedback").textContent = "No";
 }
 
 function restart() {
   resetBoard();
   shuffleCards();
+  let pairs = 0;
+  let feedback = "Select two cards to find out."
   score = 0;
   document.querySelector(".score").textContent = score;
+  document.querySelector(".pairs").textContent = pairs;
+  document.querySelector(".feedback").textContent = feedback;
   gridContainer.innerHTML = "";
   generateCards();
+}
+
+function youWin() {
+  let pairs = 0;
+  document.getElementById("pairs").addEventListener("", () => {
+    if (++pairs == 6) {
+      $('#modal1').modal('show');
+    };
+  })
 }

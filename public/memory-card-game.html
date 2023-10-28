@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Fun-Land</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -45,7 +44,7 @@
     </section>
 
     <section>
-        <h1 id="game-h1">
+        <h1 class="page-title">
             Memory Cards
         </h1>
         <h1 class="paragraph-content-memory-page">
@@ -57,14 +56,49 @@
         <div class="grid-container">
 
         </div>
-        <p id="game-p">
-            Score: <span class="score"></span>
+        <p id="game-p2">
+            Was it a pair? <span class="feedback"></span>
         </p>
+        <p id="game-p">
+            Score: <span class="score"></span> | Pairs: <span class="pairs" id="pairs"></span>
+        </p>
+        
         <div class="actions">
             <button onclick="restart()">Restart</button>
         </div>
-        <script src="scripts/memory-card-game.js"></script>
     </section>
+
+    <form class="form">
+        <div class="left-card">
+          <div id="modal1" class="overlay">
+            <a class="cancel" href="#"></a>
+            <div class="modal">
+              <div class="content">
+                <section class="content">
+                  <div class="left-card">
+                    <h2>Preparing for Counter Strike 2</h2>
+                    <p class="popup">
+                      <img src="images/counterstrike-fixed-background.jpeg" alt="You Win!" class="article-images-resize">
+                    </p>
+                    <p>
+                      Date: 19/07/2023
+                    </p>            
+                    <p>
+                      As the gaming world eagerly awaits the release of Counter Strike 2, one esports organization stands at the forefront, ready to embrace the next chapter in competitive first-person shooter history. 
+                      Team Endalex, an iconic name in the esports scene, has spent the past ten years conquering the world of Counter-Strike: Global Offensive (CSGO). 
+                      Now, they are poised to embark on a new journey in the highly anticipated sequel.
+                    </p>
+                    <div class="actions">
+                        <button onclick="restart()">Restart</button>
+                    </div>
+                  </div>
+                </section>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
 
     <section>
         <div class="rule-list">
@@ -93,7 +127,7 @@
     </section>
 
     <script src="scripts/memory-card-game.js"></script>
-
+    <script src="scripts/script.js"></script>
     <footer>
         <ul class="social-networks">
             <li><a id="footer-text">We can be found on:</a></li>
