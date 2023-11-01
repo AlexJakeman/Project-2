@@ -79,6 +79,9 @@ function disableCards() {
   document.querySelector(".pairs").textContent = pairs; 
   resetBoard();
   document.querySelector(".feedback").textContent = "Yes";
+  // if (pairs == 1) {
+  //   youWin();
+  // }
 }
 
 function unflipCards() {
@@ -107,13 +110,4 @@ function restart() {
   document.querySelector(".feedback").textContent = feedback;
   gridContainer.innerHTML = "";
   generateCards();
-}
-
-function youWin() {
-  let pairs = 0;
-  document.getElementById("pairs").addEventListener("", () => {
-    if (++pairs == 6) {
-      $('#modal1').modal('show');
-    };
-  })
 }
