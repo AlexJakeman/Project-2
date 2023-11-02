@@ -228,7 +228,7 @@ ol li {
 .modal {
   margin: 100px auto;
   padding: 20px;
-  background: #fff;
+  background: #EBEDDF;
   border: 1px solid #666;
   width: 85%;
   border-radius: 6px;
@@ -433,6 +433,40 @@ ol li {
   font-size: larger;
 }
 
+.instruction-images {
+  padding-top: 10px;
+}
+
+#instruction-title {
+  border-radius: 10px;
+}
+
+.instruction-images img {
+  border-radius: 10px;
+  max-width: 400px;
+
+}
+
+#instruction-border-1, #instruction-border-2 {
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+#instructions-extended {
+  font-weight: bold;
+  font-size: large;
+}
+
+.instruction-header {
+  background-color: #333A2F;
+  color: #EBEDDF;
+  border-radius: 10px;
+  margin-top: 15px; 
+  max-width: 400px;
+  margin: auto;
+}
+
 /* Alex Says page items */
 
 #alex-says-logo-img img {
@@ -585,6 +619,11 @@ footer a {
   .page-title {
     border-radius: 0;
   }
+
+  .instruction-images img {
+    max-width: 290px;
+  }
+
 }
 
 
