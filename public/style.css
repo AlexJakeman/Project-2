@@ -497,14 +497,33 @@ ol li {
   margin-bottom: 20px;
 }
 
-#homepage-modal-title, #homepage-modal-title-2, #instruction-title-3, #instruction-title-4 {
+#homepage-modal-title, #homepage-modal-title-2, #homepage-modal-title-5,#instruction-title-3, #instruction-title-4, #instruction-title-5 {
   border-radius: 10px;
   max-width: 500px;
   margin: auto;
   margin-bottom: 20px;
 }
 
-#instruction-title-3, #instruction-title-4 {
+#flex-article-1, #flex-article-2, #flex-article-3 {
+  background-color: #edc8c8;
+  margin: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  color: #000000;
+}
+
+#flex-article-title-1, #flex-article-title-2, #flex-article-title-3 {
+  background-color: #333A2F;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  color: #EBEDDF;
+}
+
+#instruction-title-3, #instruction-title-4, #instruction-title-5 {
   border-color: black;
   border-style: solid;  
   font-size: 20px;
@@ -519,7 +538,7 @@ ol li {
   margin: auto;
 }
 
-#alex-says-logo-img-homepage-1 img, #alex-says-logo-img-homepage-2 img, #alex-says-logo-img-homepage-3 img, #alex-says-logo-img-homepage-4 img {
+#alex-says-logo-img-homepage-1 img, #alex-says-logo-img-homepage-2 img, #alex-says-logo-img-homepage-3 img, #alex-says-logo-img-homepage-4 img, #alex-says-logo-img-homepage-5 img, #alex-says-logo-img-homepage-6 img {
   border-radius: 10px;
   max-width: 300px;
   text-align: center;
@@ -622,11 +641,10 @@ footer a {
     float:left;
   }
   
-  #team-member-21, #team-member-22 {
+  #team-member-21, #team-member-22, #team-member-25 {
     max-width: 70%;
     margin: auto;
     height: auto;
-
   }
 
   #mission-statement-img {
@@ -697,7 +715,7 @@ footer a {
     max-width: 250px;
   }
 
-  #instruction-title-3, #instruction-title-4 {
+  #instruction-title-3, #instruction-title-4, #instruction-title-5 {
     font-size: 20px;
   }
 }
@@ -752,6 +770,11 @@ footer a {
   .modal {
     max-width: 700px;
     max-height: 700px;
+  }
+
+  #flex-article-1, #flex-article-2, #flex-article-3 {
+    max-width: 750px;
+    margin: auto;
   }
 }
 
@@ -822,5 +845,10 @@ footer a {
   .modal {
     max-width: 700px;
     max-height: 700px;
+  }
+
+  #flex-article-1, #flex-article-2, #flex-article-3 {
+    max-width: 750px;
+    margin: auto;
   }
 }
