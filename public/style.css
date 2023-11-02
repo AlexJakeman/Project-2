@@ -437,8 +437,10 @@ ol li {
   padding-top: 10px;
 }
 
-#instruction-title {
+#instruction-title-1, #instruction-title-2 {
   border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
 }
 
 .instruction-images img {
@@ -465,6 +467,13 @@ ol li {
   margin-top: 15px; 
   max-width: 400px;
   margin: auto;
+}
+
+#instruction-title-2 {
+  background-color: #333A2F;
+  color: #EBEDDF;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Alex Says page items */
@@ -624,6 +633,9 @@ footer a {
     max-width: 290px;
   }
 
+  .modal {
+    max-height: 700px;
+  }
 }
 
 
@@ -671,6 +683,11 @@ footer a {
 
   .grid-container {
     max-width: 650px
+  }
+
+  .modal {
+    max-width: 700px;
+    max-height: 700px;
   }
 }
 
@@ -736,5 +753,10 @@ footer a {
 
   .grid-container {
     max-width: 650px
+  }
+
+  .modal {
+    max-width: 700px;
+    max-height: 700px;
   }
 }
