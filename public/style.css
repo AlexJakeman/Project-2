@@ -497,7 +497,7 @@ ol li {
   margin-bottom: 20px;
 }
 
-#homepage-modal-title, #instruction-title-3, #instruction-title-4 {
+#homepage-modal-title, #homepage-modal-title-2, #instruction-title-3, #instruction-title-4 {
   border-radius: 10px;
   max-width: 500px;
   margin: auto;
@@ -513,7 +513,7 @@ ol li {
   margin: auto;
 }
 
-#alex-says-logo-img-homepage-1 img, #alex-says-logo-img-homepage-2 img {
+#alex-says-logo-img-homepage-1 img, #alex-says-logo-img-homepage-2 img, #alex-says-logo-img-homepage-3 img, #alex-says-logo-img-homepage-4 img {
   border-radius: 10px;
   max-width: 300px;
   text-align: center;

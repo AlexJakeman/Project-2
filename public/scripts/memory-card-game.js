@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-invalid-this */
 /* eslint-disable require-jsdoc */
+/* jslint for:true */
 const gridContainer = document.querySelector('.grid-container');
 let cards = [];
 let firstCard;
@@ -39,8 +40,6 @@ function shuffleCards() {
 }
 
 function generateCards() {
-  // let i = 0;
-  /* jslint for:true */
   for (i; i < cards.length; i += 1) {
     const card = cards[i];
     const cardElement = document.createElement('div');
