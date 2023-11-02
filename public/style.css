@@ -504,6 +504,12 @@ ol li {
   margin-bottom: 20px;
 }
 
+#instruction-title-3, #instruction-title-4 {
+  border-color: black;
+  border-style: solid;  
+  font-size: 20px;
+}
+
 /* Alex Says page items */
 
 #alex-says-logo-img img  {
@@ -689,6 +695,10 @@ footer a {
 
   #alex-says-logo-img-homepage-2 img {
     max-width: 250px;
+  }
+
+  #instruction-title-3, #instruction-title-4 {
+    font-size: 20px;
   }
 }
 
