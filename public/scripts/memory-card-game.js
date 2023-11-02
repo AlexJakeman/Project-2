@@ -1,27 +1,30 @@
 const gridContainer = document.querySelector(".grid-container");
 let cards = [];
-let firstCard, secondCard;
+let firstCard;
+let secondCard;
 let lockBoard = false;
 let score = 0;
 let pairs = 0;
-let feedback = "Select two cards to find out."
+let feedback = "Select two cards to find out.";
 
 document.querySelector(".pairs").textContent = pairs;
 document.querySelector(".feedback").textContent = feedback;
 document.querySelector(".score").textContent = score;
 
 fetch("./data/cards.json")
-  .then((res) => res.json())
-  .then((data) => {
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
     cards = [...data, ...data];
     shuffleCards();
     generateCards();
   });
 
 function shuffleCards() {
-  let currentIndex = cards.length,
-    randomIndex,
-    temporaryValue;
+  let currentIndex = cards.length;
+  let randomIndex;
+  let temporaryValue;
   while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
@@ -31,14 +34,34 @@ function shuffleCards() {
   }
 }
 
+// function generateCards() {
+//   for (let i = 0; i < cards.length; i+= 1) {
+//     const card = cards[i];
+//     const cardElement = document.createElement("div");
+//     cardElement.classList.add("card");
+//     cardElement.setAttribute("data-name", card.name);
+//     cardElement.innerHTML = `
+//       <div class="front">
+//         <img class="front-image" src="${card.image}" />
+//       </div>
+//       <div class="back"></div>
+//     `;
+//     gridContainer.appendChild(cardElement);
+//     cardElement.addEventListener("click", flipCard);
+//   }
+// }
+
+/* jslint es6: true */
+
 function generateCards() {
-  for (let card of cards) {
+  for (let i = 0; i < cards.length; i += 1) {
+    const card = cards[i];
     const cardElement = document.createElement("div");
     cardElement.classList.add("card");
     cardElement.setAttribute("data-name", card.name);
     cardElement.innerHTML = `
       <div class="front">
-        <img class="front-image" src=${card.image} />
+        <img class="front-image" src="${card.image}" />
       </div>
       <div class="back"></div>
     `;
@@ -46,6 +69,9 @@ function generateCards() {
     cardElement.addEventListener("click", flipCard);
   }
 }
+
+
+
 
 function flipCard() {
   if (lockBoard) return;
@@ -68,28 +94,29 @@ function flipCard() {
 
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
-  
+
   isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-  pairs++,
-  document.querySelector(".pairs").textContent = pairs; 
+  pairs++;
+  document.querySelector(".pairs").textContent = pairs;
   resetBoard();
   document.querySelector(".feedback").textContent = "Yes";
-  // if (pairs == 1) {
-  //   youWin();
-  // }
+
+  if (pairs === 6) {
+    youWin();
+  }
 }
 
 function unflipCards() {
-  setTimeout(() => {
+  setTimeout(function () {
     firstCard.classList.remove("flipped");
     secondCard.classList.remove("flipped");
     resetBoard();
-  }, 1000);  
+  }, 1000);
 }
 
 function resetBoard() {
@@ -102,12 +129,18 @@ function resetBoard() {
 function restart() {
   resetBoard();
   shuffleCards();
-  let pairs = 0;
-  let feedback = "Select two cards to find out."
+  pairs = 0;
+  feedback = "Select two cards to find out.";
   score = 0;
   document.querySelector(".score").textContent = score;
   document.querySelector(".pairs").textContent = pairs;
   document.querySelector(".feedback").textContent = feedback;
   gridContainer.innerHTML = "";
   generateCards();
+}
+
+function youWin() {
+  document.querySelector(".final-score").textContent = score;
+  document.querySelector(".you-win").style.display = "block";
+  document.querySelector(".in-progress").style.display = "none";
 }

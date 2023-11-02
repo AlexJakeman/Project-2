@@ -44,11 +44,11 @@
             <div class="flex-item-center" style="order: 1">
                 <div style="height: 100px;"> 
                     <div id="team-member-5">
-                        <h1 class="page-title">
-                            Simon Says
+                        <h1 class="page-title" id="match-the-cards-title">
+                            Match The Cards
                         </h1>
-                        <h2 class="paragraph-header">
-                            Coming soon!
+                        <h2 class="paragraph-content">
+                            For instructions on how to play, scroll to the bottom!
                         </h2>
                     </div>    
                 </div>
@@ -58,101 +58,92 @@
 
     <section class="flex-mobile">
         <div class="flex-container">
-            <div class="flex-item-center" style="order: 1">
-                <div class="flex-card-game">
-                    <button data-turnable="true" data-number="0" id="1">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="2">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="3">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="4">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="5">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="6">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="7">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="8">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="9">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="10">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="11">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <button data-turnable="true" data-number="0" id="12">
-                    <img src="images/memory-cards/rearside-card.png" alt="card back" />
-                    </button>
-                    <div class="win-container">
-                        You win!
-                        <button class="play-again" onclick="window.location.reload()">Play Again</button>
-                    </div>
+            <div class="flex-item-center">
+                <div class="grid-container">
+
                 </div>
-                <p id="game-p2" class="flex-feedback-items">
-                    Was it a pair? <span class="feedback"></span>
-                </p>
-                <p id="game-p" class="flex-feedback-items">
-                    Score: <span class="memory-score"></span> | Pairs: <span class="matches" id="pairs"></span>
-                </p>
+                <div class="paragraph-content">
+                    <div class="you-win">
+                        <p>Congratulations, you win!</p>
+                        <p>Your final score was: <span class="final-score"></span></p>
+                        <p><img src="images/memory-cards/you-win.png" alt="Congraulations image"></p>
+                    </div>
+                    <p class="in-progress">Is it a pair? <span class="feedback"></span></p>
+                    <p class="in-progress">Score: <span class="score"></span>  |  Pairs: <span class="pairs"></span></p>
+                </div>
+                <div>
+                    <h2 class="paragraph-header">
+                        <a onclick="window.location.reload()" class="modal-button" id="restart-button">Restart</a>
+                    </h2>
+                </div>
+            </div>
+        </div>      
+    </section>
+    
+    <div id="modal2" class="overlay">
+        <a class="cancel" href="#">
+
+        </a>
+        <div class="modal">
+            <div class="content">
+                <section class="content">
+                    <div class="rule-list">
+                        <h1 class="page-title">
+                            How To Play
+                        </h1>
+                        <h2 class="paragraph-content-memory-page">
+                            This fun game will test your memory as well as help you to improve the way you remember images and their positions in the grid!
+                        </h2>
+                        <div class="paragraph-content">
+                            <ol>
+                                <li> 
+                                    1. The objective is to collect the most pairs of cards.
+                                </li>
+                                <li> 
+                                    2. On each turn, the player can turn over any two cards.
+                                </li>
+                                <li>
+                                    3. The cards will stay turned over if they're a match.
+                                </li>
+                                <li> 
+                                    4. When a player turns over two cards that do not match, those cards are turned face down again.
+                                </li>
+                                <li> 
+                                    5. The score will increase by 1 every turn.
+                                </li>
+                                <li> 
+                                    6. Lowest score wins.
+                                </li>
+                                <li class="paragraph-content">
+                                    Good luck!
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="paragraph-header">
+                            <span class="modal-button"><a href="#">Hide Instructions</a></span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="flex-mobile">
         <div class="flex-container">
             <div class="flex-item-center" style="order: 1">
                 <div class="rule-list">
-                    <h1 class="page-title">
-                        How To Play
-                    </h1>
-                    <h2 class="paragraph-content-memory-page">
-                        This fun game will test your memory as well as help you to improve the way you remember images and their positions in the grid!
+                    <h2 class="paragraph-header">
+                        <a href="#modal2" class="modal-button">How To Play</a>
                     </h2>
-                    <h3 class="paragraph-content">
-                        <ol>
-                            <li> 
-                                1. The objective is to collect the most pairs of cards.
-                            </li>
-                            <li> 
-                                2. On each turn, the player can turn over any two cards.
-                            </li>
-                            <li>
-                                3. The cards will stay turned over if they're a match.
-                            </li>
-                            <li> 
-                                4. When a player turns over two cards that do not match, those cards are turned face down again.
-                            </li>
-                            <li> 
-                                5. The score will increase by 1 every turn.
-                            </li>
-                            <li> 
-                                6. Lowest score wins.
-                            </li>
-                            <li class="paragraph-content">
-                                Good luck!
-                            </li>
-                        </ol>
-                    </h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="scripts/memory-2.js"></script>
+    <script src="scripts/memory-card-game.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <footer>
         <ul class="social-networks">
             <li><a id="footer-text">We can be found on:</a></li>
