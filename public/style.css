@@ -574,7 +574,7 @@ ol li {
 
 #alex-says-logo-img-homepage-1 img, #alex-says-logo-img-homepage-2 img, #alex-says-logo-img-homepage-3 img, #alex-says-logo-img-homepage-4 img, #alex-says-logo-img-homepage-5 img, #alex-says-logo-img-homepage-6 img {
   border-radius: 10px;
-  max-width: 300px;
+  max-width: 250px;
   text-align: center;
   margin: auto;
   margin-bottom: 15px;
@@ -583,6 +583,10 @@ ol li {
 #alex-says-preview-img img {
   border-radius: 10px;
   max-height: 500px;
+}
+
+#alex-says-preview {
+  margin-bottom: 30px;
 }
 
 /* ----- Footer -----  */
