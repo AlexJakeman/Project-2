@@ -6,13 +6,13 @@
 
 <details><summary>Expand Desktop Homepage</summary>
 
-![Image of the homepage from a Mobile user's perspective](/public/images/readme-images/readme-mobile-image.png)
+![Image of the homepage from a Desktop user's perspective](/public/images/readme-images/readme-desktop-image.png)
 
 </details>
 
 <details><summary>Expand Mobile Homepage</summary>
 
-![Image of the homepage from a Desktop user's perspective](/public/images/readme-images/readme-desktop-image.png)
+![Image of the homepage from a Mobile user's perspective](/public/images/readme-images/readme-mobile-image.png)
 
 </details>
 
