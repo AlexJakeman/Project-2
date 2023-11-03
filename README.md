@@ -49,13 +49,49 @@ Here are some user stories to illustrate the user experience:
 
 1. As a player, I want clear instructions on how to play "MATCH!" so I can quickly get started.
 
+<details><summary>Expand Images</summary>
+
+![Image of the How To Play button on the Match The Cards page](/public/images/readme-images/user-story-clear-instructions-1.png)
+
+![Image of the Modal popout for instructions on how to play](/public/images/readme-images/user-story-clear-instructions-2.png)
+
+</details>
+
 2. As a user, I expect an intuitive and responsive interface to make the game enjoyable and accessible.
+
+<details><summary>Expand Images</summary>
+
+![Image of the homepage from a Desktop user's perspective](/public/images/readme-images/readme-desktop-image.png)
+
+![Image of the homepage from a Mobile user's perspective](/public/images/readme-images/readme-mobile-image.png)
+
+</details>
 
 3. As a player, I want to track my progress and see my score to motivate myself to improve.
 
+<details><summary>Expand Images</summary>
+
+![Image of the negative pair feedback](/public/images/memory-instructions/step-two-b.png)
+
+![Image of the positive pair feedback](/public/images/memory-instructions/step-two-d.png)
+
+</details>
+
 4. As a user, I would appreciate a visually pleasing design to make the gaming experience more enjoyable.
 
+<details><summary>Expand Image</summary>
+
+![Image of the negative pair feedback](/public/images/readme-images/user-story-visuals.png)
+
+</details>
+
 5. As a player, I want the ability to restart the game or go back to the homepage easily for a seamless gaming experience.
+
+<details><summary>Expand Image</summary>
+
+![Image of the negative pair feedback](/public/images/readme-images/user-story-restart.png)
+
+</details>
 
 ## Technologies Used
 
@@ -91,6 +127,139 @@ GitHub is used to store the projects code after being pushed from Git.
 
 4. CSS (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
 - There are no clear CSS errors within the project. Checked using W3C VS Code extension.
+
+### Automated Testing
+Automated testing involves using tools and scripts to test the application automatically. This can include unit tests, integration tests, and end-to-end tests. Automated testing is beneficial for catching regressions and ensuring that the application functions as expected after code changes.
+
+### Manual Testing
+Manual testing is performed by human testers who interact with the application to identify bugs, usability issues, and other problems. Manual testing is valuable for evaluating the user experience, design, and overall functionality.
+
+#### Manual Test Case 1 (Functionality of the "Match" game)
+
+<details><summary>Expand Test Case 1</summary>
+
+Test Objective: To verify that the "MATCH!" game correctly identifies and allows players to match card pairs.
+
+Preconditions:
+
+1. The "MATCH!" game is loaded and accessible on the Fun-Land website.
+2. The player is on the game's main screen with all cards face-down.
+
+Test Steps:
+
+1. Click the "Start Game" button to begin the game.
+2. Observe that all cards are initially face-down.
+
+Test Step 1: Match Card Pairs
+
+1. Click on the first card to reveal it.
+2. Click on a second card to reveal it.
+3. Verify that the cards remain face-up for a brief moment to allow the player to see their contents.
+4. If the two cards match (i.e., they have the same symbol or image), they should remain face-up.
+5. If the two cards do not match, they should flip back face-down after a short delay.
+6. Repeat steps 3-7 until you successfully match six pairs of cards.
+
+Expected Results:
+
+- After successfully matching six pairs, a message should indicate that the game is completed.
+- All matched card pairs should remain face-up.
+- The game should not allow the player to click on more than two cards at a time.
+- If a player clicks on the same card twice, it should not count as a match.
+- If the player matches six pairs, the game should provide feedback on their success and prompt them to play again.
+
+Test Step 2: Restart the Game
+
+1. Click on the "Restart" or "New Game" button (whichever is available) to restart the game.
+
+Expected Results:
+
+- The game should reset, shuffling the card positions and flipping them face-down.
+- The player's progress (e.g., the number of matched pairs) should be reset to zero.
+
+Postconditions:
+
+1. Ensure that the game can be played again and that the above steps can be repeated for additional rounds.
+
+Test Results:
+
+- Tests Passed
+- Expected results for both steps were successful. 
+
+![Image of the PASS result for Test Step 1](/public/images/readme-images/match-pairs-test-results.png)
+
+![Image of the PASS result for Test Step 2](/public/images/readme-images/restart-test-result.png)
+
+</details>
+
+#### Manual Test Case 2 (Responsiveness of the Web Application)
+
+<details><summary>Expand Test Case 2</summary>
+
+Test Objective: To verify that the Fun-Land web application is user-friendly, intuitive, and responsive across various devices and browsers.
+
+Test Environment: The test will be conducted on multiple devices and browsers, including:
+
+Desktop (Windows and macOS):
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+
+Mobile (iOS and Android):
+- Safari (iOS)
+- Google Chrome (Android)
+
+Test Steps:
+
+1. Usability Testing:
+
+a. Open the Fun-Land website on a desktop browser.
+b. Verify that the homepage loads correctly.
+c. Check if the navigation menu (navbar) is visible and functional.
+d. Verify that there is a clear and concise set of instructions or a tutorial for playing the game.
+e. Play the game and observe if the card-matching logic is intuitive and provides feedback.
+f. Verify that there is a way to restart the game.
+g. Check if the visible progress indicator to track the number of matched pairs is correct.
+h. Ensure that the game provides clear feedback for winning.
+i. Test the responsiveness of the application by resizing the browser window to different dimensions and checking if the layout adjusts accordingly.
+
+2. Responsiveness Testing:
+
+a. Access the Fun-Land website on a mobile device (iOS, Safari).
+b. Verify that the website is responsive and adapts to the smaller screen size.
+c. Check if all elements, including text and buttons, are readable and usable without horizontal scrolling.
+d. Attempt to play the game on the mobile device and ensure that touch interactions (tapping) work as expected.
+f. Access the website on a different mobile device (Android, Google Chrome) and repeat the testing process.
+
+Expected Results:
+
+- The Fun-Land web application is user-friendly, with clear instructions for playing the game.
+- The game is intuitive, providing feedback on card matches, progress, and game outcomes.
+- The website is responsive and adjusts to different screen sizes and orientations on both mobile and desktop devices.
+- The application functions correctly and consistently across multiple browsers.
+
+Test Results:
+
+- Tests Passed
+- Expected results for both steps were successful.
+
+![Image of the PASS result for Usability Testing](/public/images/readme-images/usability-test-results.png)
+
+![Image of the PASS result for Responsiveness Testing](/public/images/readme-images/responsiveness-test-results.png)
+
+</details>
+
+#### Examples of Testing for "MATCH!"
+
+1. **Automated Testing**:
+   - Writing unit tests for the card-flipping logic to ensure cards behave correctly.
+   - Implementing end-to-end tests to simulate player interactions and verify game completion conditions.
+
+2. **Manual Testing**:
+   - Manually testing the user interface to ensure cards, feedback items (Score, pairs, etc.) and game other elements function as expected.
+   - Testing the game on different browsers and devices to identify cross-browser compatibility issues.
+   - Testing the game with a focus on user experience, such as ensuring that instructions are clear and that feedback is provided for correct and incorrect moves.
+   - Identifying edge cases, such as what happens when a player completes the game multiple times.
 
 ### "MATCH!" - Testing The Game
 
@@ -150,5 +319,5 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ### Code snippets from external sources
 
-- YouTube - Influenced the creation of the game -  https://www.youtube.com/watch?v=xWdkt6KSirw
+- YouTube - Influenced the creation of the Match The Card game - https://www.youtube.com/watch?v=xWdkt6KSirw
 - Popup window for articles/instructions - https://www.cssscript.com/demo/minimal-overlay-modal-pure-css/#

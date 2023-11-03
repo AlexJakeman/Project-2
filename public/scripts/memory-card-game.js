@@ -7,15 +7,17 @@ let cards = [];
 let firstCard;
 let secondCard;
 let lockBoard = false;
-let score = 0;
+let score = 0; 
 let pairs = 0;
 const feedback = 'Select two cards to find out.';
 let i = 0;
 
+// Alex's Code
 document.querySelector('.pairs').textContent = pairs;
 document.querySelector('.feedback').textContent = feedback;
 document.querySelector('.score').textContent = score;
 
+// Code from tutorial with ESLinting issues fixed by Alex
 fetch('./data/cards.json')
     .then(function(res) {
       return res.json();
@@ -26,6 +28,7 @@ fetch('./data/cards.json')
       generateCards();
     });
 
+// Code from tutorial
 function shuffleCards() {
   let currentIndex = cards.length;
   let randomIndex;
@@ -39,6 +42,7 @@ function shuffleCards() {
   }
 }
 
+// Code from tutorial with ESLinting issues fixed by Alex
 function generateCards() {
   for (i; i < cards.length; i += 1) {
     const card = cards[i];
@@ -56,6 +60,7 @@ function generateCards() {
   }
 }
 
+// Code from tutorial with ESLinting issues fixed by Alex
 function flipCard() {
   if (lockBoard) {
     return;
@@ -77,12 +82,14 @@ function flipCard() {
   checkForMatch();
 }
 
+// Code from tutorial
 function checkForMatch() {
   const isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
   isMatch ? disableCards() : unflipCards();
 }
 
+// Code from tutorial with functionality added by Alex (pairs & feedback, youWin())
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
@@ -96,6 +103,7 @@ function disableCards() {
   }
 }
 
+// Code from tutorial
 function unflipCards() {
   setTimeout(function() {
     firstCard.classList.remove('flipped');
@@ -104,6 +112,7 @@ function unflipCards() {
   }, 1000);
 }
 
+// Code from tutorial with functionality added by Alex (feedback)
 function resetBoard() {
   firstCard = null;
   secondCard = null;
@@ -111,6 +120,7 @@ function resetBoard() {
   document.querySelector('.feedback').textContent = 'No';
 }
 
+// Alex's code
 function youWin() {
   document.querySelector('.final-score').textContent = score;
   document.querySelector('.you-win').style.display = 'block';
