@@ -1,26 +1,26 @@
 [
     {
-        "image": "/public/images/memory-cards/dark-arcade-card.png",
+        "image": "images/memory-cards/dark-arcade-card.png",
         "name": "Dark Arcade"
     },
     {
-        "image": "/public/images/memory-cards/light-arcade-card.png",
+        "image": "images/memory-cards/light-arcade-card.png",
         "name": "Light Arcade"
     },
     {
-        "image": "/public/images/memory-cards//dark-controller-card.png",
+        "image": "images/memory-cards/dark-controller-card.png",
         "name": "Dark Controller"
     },
     {
-        "image": "/public/images/memory-cards/light-controller-card.png",
+        "image": "images/memory-cards/light-controller-card.png",
         "name": "Light Controller"
     },
     {
-        "image": "/public/images/memory-cards/dark-monitor-card.png",
+        "image": "images/memory-cards/dark-monitor-card.png",
         "name": "Dark Monitor"
     },
     {
-        "image": "/public/images/memory-cards/light-monitor-card.png",
+        "image": "images/memory-cards/light-monitor-card.png",
         "name": "Light Monitor"
     }
 ]

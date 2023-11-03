@@ -111,19 +111,6 @@ function resetBoard() {
   document.querySelector('.feedback').textContent = 'No';
 }
 
-// function restart() {
-//   resetBoard();
-//   shuffleCards();
-//   pairs = 0;
-//   feedback = "Select two cards to find out.";
-//   score = 0;
-//   document.querySelector(".score").textContent = score;
-//   document.querySelector(".pairs").textContent = pairs;
-//   document.querySelector(".feedback").textContent = feedback;
-//   gridContainer.innerHTML = "";
-//   generateCards();
-// }
-
 function youWin() {
   document.querySelector('.final-score').textContent = score;
   document.querySelector('.you-win').style.display = 'block';
