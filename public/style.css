@@ -140,7 +140,6 @@ transform: rotate(-45deg);
 height: 65px;
 padding-top: 2px;
 float: right;
-/* position: absolute; */
 right: 5px;
 }
 
@@ -695,9 +694,9 @@ footer a {
     max-width: 390px;
     justify-content: center;
     padding-left: 10px;
-    grid-gap: 8px;
+    grid-gap: 4px;
     grid-template-columns: repeat(3, 120px);
-    grid-template-rows: repeat(2, calc(100px / 2 * 3));
+    grid-template-rows: repeat(2, calc(90px / 2 * 3));
   }
   
   .card {
