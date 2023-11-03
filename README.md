@@ -23,11 +23,11 @@ We use the "Geo" retro-style font to add a touch of nostalgia and playfulness to
 
 ### Project Goal
 
-The primary goal of this project is to create a fun and engaging card game, "MATCH!", to help young adults enhance their memory and cognitive skills.
+Fun-Land is a website that hosts the "MATCH!" memory card game as its primary attraction. The website is designed to provide an engaging and user-friendly platform for players to enjoy the game.
 
 ### Player Goal
 
-Players visiting the website aim to enjoy the "MATCH!" game while practicing and improving their memory skills.
+The primary objective is to have fun playing the "MATCH!" card game. Users visit Fun-Land to engage in an entertaining gaming experience that challenges their memory skills. The game offers a mentally stimulating activity where players can test their memory, concentration, and pattern recognition abilities.
 
 ### User Stories
 

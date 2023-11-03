@@ -154,6 +154,22 @@ right: 5px;
     border-radius: 10px;
 }
 
+.news-paragraph-content {
+  background-color: #edc8c8;
+  margin-top: 25px;
+  font-size: 44px;
+  margin: auto;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  color: black;
+  max-width: 300px;
+}
+
+#news-paragraph-header {
+  margin-bottom: 40px;
+}
+
 .paragraph-header {
     text-align: center; 
     font-size: 28px;
@@ -513,7 +529,7 @@ ol li {
   color: #000000;
 }
 
-#flex-article-title-1, #flex-article-title-2, #flex-article-title-3 {
+#flex-article-title-1, #flex-article-title-2, #flex-article-title-3, #flex-article-4 {
   background-color: #333A2F;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -527,6 +543,24 @@ ol li {
   border-color: black;
   border-style: solid;  
   font-size: 20px;
+}
+
+#desktop-banner img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 950px;
+  border-color: black;
+  border-style: solid;  
+}
+
+#mobile-banner img {
+  border-radius: 10px;
+  width: 80%;
+  max-width: 450px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-color: black;
+  border-style: solid;  
 }
 
 /* Alex Says page items */
@@ -696,6 +730,7 @@ footer a {
   
   .page-title {
     border-radius: 0;
+    width: 100%;
   }
 
   .instruction-images img {
@@ -717,6 +752,10 @@ footer a {
 
   #instruction-title-3, #instruction-title-4, #instruction-title-5 {
     font-size: 20px;
+  }
+
+  #desktop-banner img {
+    display: none;
   }
 }
 
@@ -775,6 +814,10 @@ footer a {
   #flex-article-1, #flex-article-2, #flex-article-3 {
     max-width: 750px;
     margin: auto;
+  }
+
+  #mobile-banner img {
+    display: none;
   }
 }
 
@@ -850,5 +893,9 @@ footer a {
   #flex-article-1, #flex-article-2, #flex-article-3 {
     max-width: 750px;
     margin: auto;
+  }
+
+  #mobile-banner img {
+    display: none;
   }
 }
