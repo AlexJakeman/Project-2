@@ -80,17 +80,17 @@ GitHub is used to store the projects code after being pushed from Git.
 
 ### Validation/Code Linter
 
-- ESLint (https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-Validated my JS code using the linked extension within VS code
+1. ESLint (https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- Validated my JS code using the linked extension within VS code
 
-- W3C (https://jigsaw.w3.org/css-validator/#validate_by_input)
-Checked all HTML and CSS manually using
+2. W3C (https://jigsaw.w3.org/css-validator/#validate_by_input)
+- Checked all HTML and CSS manually using
 
-- HTML (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
-There are no clear HTML errors within the project. Checked using W3C VS Code extension (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
+3. HTML (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
+- There are no clear HTML errors within the project. Checked using W3C VS Code extension (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
 
-- CSS (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
-There are no clear CSS errors within the project. Checked using W3C VS Code extension.
+4. CSS (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
+- There are no clear CSS errors within the project. Checked using W3C VS Code extension.
 
 ### "MATCH!" - Testing The Game
 
@@ -115,7 +115,7 @@ To ensure the functionality and user-friendliness of "MATCH!", we conducted vari
 
 ## Deployment
 
-### GitPages (https://alexjakeman.github.io/TeamEndalex.github.io)-
+### GitPages (https://alexjakeman.github.io/Project-2/public/index.html)-
 The project was deployed to GitHub Pages using the following steps...
 1. Log in to GitHub and locate the GitHub Repository
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
@@ -129,7 +129,7 @@ The project was deployed to GitHub Pages using the following steps...
 The project was deployed to LiveServer using the following steps...
 1. Install Liveserver extension for Visual Studio Code.
 2. Select "Go Live" in the bottom right of VS Code.
-3/ Observe browser window has opened with a local version of your website.
+3. Observe browser window has opened with a local version of your website.
 
 ### Forking the GitHub Repository
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
@@ -142,13 +142,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 ### Content
 
 - All text-based content was written by the developer.
+- Custom code written by developer, influenced by YouTube (Mentioned in external sources article)
 
 ### Acknowledgements
 
 - Stackoverflow for JS error troubleshooting.
-- 
 
 ### Code snippets from external sources
 
-- Youtube / Assisted with the creation of the game / https://www.youtube.com/watch?v=xWdkt6KSirw
+- YouTube - Influenced the creation of the game -  https://www.youtube.com/watch?v=xWdkt6KSirw
 - Popup window for articles/instructions - https://www.cssscript.com/demo/minimal-overlay-modal-pure-css/#
