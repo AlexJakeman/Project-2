@@ -89,7 +89,7 @@ function checkForMatch() {
   isMatch ? disableCards() : unflipCards();
 }
 
-// Code from tutorial with functionality added by Alex (pairs & feedback, youWin())
+// Code from tutorial / Alex (pairs & feedback, youWin())
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);

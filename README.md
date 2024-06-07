@@ -116,8 +116,14 @@ GitHub is used to store the projects code after being pushed from Git.
 
 ### Validation/Code Linter
 
-1. ESLint (https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- Validated my JS code using the linked extension within VS code
+1. Validate Javascript (https://validatejavascript.com)
+- Validated my JS code using the link above
+
+-- Memory-card-game.js
+![Image of the Memory-card-game js validation](/public/images/readme-images/memory-card-game-js-validation.png)
+
+-- Script.js
+![Image of the script js validation](/public/images/readme-images/script-js-validation.png)
 
 2. W3C (https://jigsaw.w3.org/css-validator/#validate_by_input)
 - Checked all HTML and CSS manually using
@@ -125,8 +131,22 @@ GitHub is used to store the projects code after being pushed from Git.
 3. HTML (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
 - There are no clear HTML errors within the project. Checked using W3C VS Code extension (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
 
+-- About-us.html
+![Image of the about-us html validation](/public/images/readme-images/about-us-validation-html.png)
+
+-- Alex-says.html
+![Image of the alex says html validation](/public/images/readme-images/alex-says-html-validation.png)
+
+-- Index.html
+![Image of the index html validation](/public/images/readme-images/index-html-validation.png)
+
+-- Memory-card-game.html
+![Image of the memory card game html validation](/public/images/readme-images/memory-card-game-html-validation.png)
+
 4. CSS (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
 - There are no clear CSS errors within the project. Checked using W3C VS Code extension.
+
+![Image of the style css validation](/public/images/readme-images/css-file-validation.png)
 
 ### Automated Testing
 Automated testing involves using tools and scripts to test the application automatically. This can include unit tests, integration tests, and end-to-end tests. Automated testing is beneficial for catching regressions and ensuring that the application functions as expected after code changes.
